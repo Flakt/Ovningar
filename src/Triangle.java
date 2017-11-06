@@ -14,4 +14,14 @@ public class Triangle extends Polygon {
                 getCenterPoints().x+10, getCenterPoints().y+10);
         g.drawLine(getCenterPoints().x+10, getCenterPoints().y+10, getCenterPoints().x, getCenterPoints().y-10);
     }
+    @Override
+    public String toString() {
+        System.out.println("Triangle");
+        return "Triangle";
+    }
+
+    public boolean overlaps(Triangle t){
+        System.out.println("Triangle.overlaps: "+this.toString()+"   and    "+t.toString());
+        return true;
+    }
 }

@@ -21,4 +21,14 @@ public abstract class Polygon {
 
     public void draw(Graphics g) {
     }
+
+    @Override
+    public String toString() {
+        System.out.println("Polygon");
+        return "Polygon";
+    }
+    public boolean overlaps(Polygon p){
+        System.out.println("Polygon.overlaps: " + this.toString()+"   and    "+p.toString());
+        return true;
+    }
 }

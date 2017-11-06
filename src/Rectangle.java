@@ -12,4 +12,14 @@ public class Rectangle extends Polygon {
     public void draw(Graphics g) {
         g.drawRect(getCenterPoints().x -20, getCenterPoints().y -10, 40, 20);
     }
+
+    public String toString() {
+        System.out.println("Rectangle");
+        return "Rectangle";
+    }
+
+    public boolean overlaps(Rectangle r){
+        System.out.println("Rectangle.overlaps: "+this.toString()+"   and    "+r.toString());
+        return true;
+    }
 }

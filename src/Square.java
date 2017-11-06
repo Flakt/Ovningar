@@ -13,4 +13,13 @@ public class Square extends Polygon {
         g.drawRect(getCenterPoints().x -10, getCenterPoints().y -10, 20, 20);
     }
 
+    public String toString() {
+        System.out.println("Square");
+        return "Square";
+    }
+
+    public boolean overlaps(Square s){
+        System.out.println("Square.overlaps: "+this.toString()+"   and    "+s.toString());
+        return true;
+    }
 }
