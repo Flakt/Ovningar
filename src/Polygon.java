@@ -3,7 +3,7 @@ import java.awt.*;
 /**
  * Created by schan on 2017-10-30.
  */
-public abstract class Polygon {
+public class Polygon {
     private Point centerPoints;
 
     private Polygon(Point centerPoints) {
